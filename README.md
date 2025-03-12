@@ -30,8 +30,6 @@ return [
             'connect_timeout' => 3,
             // 与Gateway是否是长链接
             'persistent_connection' => false,
-            // 禁用服务注册地址缓存
-            'addresses_cache_disable' => false,
         ],
         // 其它主机连接参数
         'other' => [
@@ -71,8 +69,6 @@ $gatewayClient = GatewayClient::connect([
     'connect_timeout' => 3,
     // 与Gateway是否是长链接
     'persistent_connection' => false,
-    // 禁用服务注册地址缓存
-    'addresses_cache_disable' => false,
 ]);
 $gatewayClient->sendToAll('{"message": "hello gateway!"}');
 ~~~
