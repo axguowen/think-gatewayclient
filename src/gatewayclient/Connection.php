@@ -812,7 +812,7 @@ class Connection
      * @param string $message
      * @return void
      */
-    public static function closeClient($client_id, $message = null)
+    public function closeClient($client_id, $message = null)
     {
         // 根据客户端ID获取客户端地址
         $address_data = Context::clientIdToAddress($client_id);
